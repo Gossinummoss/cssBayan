@@ -72,7 +72,7 @@ transition: max-height 0.2s ease-out;
 }
 
 .accordion-item input:checked ~ .accordion-content {
-max-height: 500px;
+max-height: 50rem;
 transition: max-height 0.2s ease-in;
 }
 
