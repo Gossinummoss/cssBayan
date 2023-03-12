@@ -8,8 +8,9 @@ body {
 }
 
 header {
-    border-bottom: .1rem solid;
-    margin-bottom: 10px;
+    margin: 0 auto;
+    border-bottom: .1rem solid gray;
+    width: 70%;
 }
 
 .box {
@@ -24,12 +25,6 @@ h1 {
 
 .accordion {
     width: 70%;
-}
-
-.soyjak-smeshnoy {
-    margin: 0 auto;
-    cursor: default;
-    width: 100%;
 }
 
 .accordion-dropdown {
@@ -55,7 +50,7 @@ h1 {
     transition: all .2s;
 }
 
-.accordion-item:hover .accordion-dropdown {
+.bayan-section:hover .accordion-dropdown {
     opacity: 1;
     transition: all .2s;
 }
@@ -76,10 +71,6 @@ overflow: hidden;
 transition: max-height 0.2s ease-out;
 }
 
-.accordion-item input:checked ~ .accordion-dropdown {
-transform: rotate(150deg);
-}
-
 .accordion-item input:checked ~ .accordion-content {
 max-height: 500px;
 transition: max-height 0.2s ease-in;
@@ -93,4 +84,6 @@ font-weight: bold;
 max-height: 0;
 }
 
-  
+.accordion-item input:checked + label .accordion-dropdown {
+    transform: rotate(270deg);
+  }
